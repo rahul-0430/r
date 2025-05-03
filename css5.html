@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: white;
+      padding: 30px 40px;
+      width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container img {
+      display: block;
+      margin: 0 auto 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+    }
+
+    .login-container label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login-container button.login {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .login-container button.login:hover {
+      background-color: #45a049;
+    }
+
+    .remember-me {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .remember-me input {
+      margin-right: 5px;
+    }
+
+    .bottom-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .bottom-buttons .cancel-btn {
+      padding: 8px 14px;
+      background-color: #f44336;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .bottom-buttons .cancel-btn:hover {
+      background-color: #d32f2f;
+    }
+
+    .bottom-buttons a {
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .bottom-buttons a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <img src="https://imgs.search.brave.com/BZBwnY-s44QcdUeV01-FI8gFcgO9jBim3LSYnqYLb3k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG40/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvcGVwcHlpY29u/cy1yb3VuZGVkLzUx/Mi91c2VyNC01MTIu/cG5n" alt="User Icon">
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter Username">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password">
+
+      <button type="submit" class="login">Login</button>
+
+      <div class="remember-me">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+      </div>
+
+      <div class="bottom-buttons">
+        <button type="button" class="cancel-btn">Cancel</button>
+        <a href="#">Forgot <b>password?</b></a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

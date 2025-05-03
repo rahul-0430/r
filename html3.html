@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 600px;
+            table-layout: fixed;
+        }
+
+        td {
+            border: 1px solid grey;
+            padding: 8px;
+            vertical-align: middle;
+        }
+
+        .label {
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            width: 40%;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        select[name="country"] {
+            width: 50%;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right-align {
+            text-align: right;
+        }
+
+        .declaration {
+            font-size: 14px;
+        }
+
+        .languages input {
+            margin-right: 5px;
+        }
+
+        .gender-label {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .submit-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 20px;
+            font-size: 16px;
+            border: 2px solid black;
+            background-color: lightgrey;
+            color: black;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ccc;
+        }
+
+        hr {
+            width: 100%;
+            border: 1px solid black;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td class="label">First Name</td>
+                <td><input type="text" name="fname"></td>
+            </tr>
+            <tr>
+                <td class="label">Last Name</td>
+                <td><input type="text" name="lname"></td>
+            </tr>
+            <tr>
+                <td class="label">Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td class="label">Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td class="label">Re-enter Password</td>
+                <td><input type="password" name="repassword"></td>
+            </tr>
+            <tr>
+                <td class="label">Gender</td>
+                <td>
+                    <label class="gender-label"><input type="radio" name="gender" value="male"> Male</label>
+                    <hr>
+                    <label class="gender-label"><input type="radio" name="gender" value="female"> Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Age</td>
+                <td><input type="text" name="age"></td>
+            </tr>
+            <tr>
+                <td class="label">Phone Number</td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+            <tr>
+                <td class="label">Address</td>
+                <td><textarea rows="3" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td class="label">State</td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td class="label">Country</td>
+                <td>
+                    <select name="country">
+                        <option selected disabled>Choose your country</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Canada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Languages Known</td>
+                <td class="languages">
+                    <label><input type="checkbox" name="lang" value="English"> English</label>
+                    <label><input type="checkbox" name="lang" value="Kannada"> Kannada</label>
+                    <label><input type="checkbox" name="lang" value="Hindi"> Hindi</label>
+                    <label><input type="checkbox" name="lang" value="Telugu"> Telugu</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>
+                        <input type="checkbox" checked>
+                        <span class="declaration">Hereby I declare all the given details are true</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="right-align">
+                    Log in to <a href="https://acharya.ac.in" target="_blank">Acharya</a> website
+                </td>
+            </tr>
+        </table>
+
+        <div class="submit-button">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+
+</body>
+</html>

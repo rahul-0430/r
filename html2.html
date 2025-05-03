@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested List and Links</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: fit-content;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+
+        .link-box {
+            border: 2px solid black;
+            background-color: lightgrey;
+            padding: 15px;
+            width: fit-content;
+            text-align: left;
+        }
+
+        a {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <p><strong>Lists can be nested (list inside list):</strong></p>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+    </div>
+
+    <div class="link-box">
+        <p>Click any of the following links</p>
+        <a href="https://example.com" target="_blank">Opens in New</a>|
+        <a href="https://example.com" target="_self">Opens in Self</a>|
+        <a href="https://example.com" target="_parent">Opens in Parent</a>|
+        <a href="https://example.com" target="_top">Opens in Body</a>
+    </div>
+
+</body>
+</html>
